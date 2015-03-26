@@ -1,0 +1,19 @@
+{
+  "name": "BetaMeanProject",
+  "version": "1.0.0",
+  "description": "Understanding end to end architecture of MEAN",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "Manoj",
+  "license": "ISC"
+}
