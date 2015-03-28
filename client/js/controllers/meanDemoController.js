@@ -1,11 +1,17 @@
 meanDemo.controller('meanDemoCountController', ['$scope', '$resource', function($scope, $resource) {
-	$scope.courses = [
-		{name: "IRE"},
-		{name: "Search optimization"}
-	]
+	
+	var courseResource = $resource('/api/courses');
+
+	courseResource.query(function(results) {
+		$scope.courses = results;
+	});
 
 	$scope.addCourse = function() {
-		$scope.courses.push({name: $scope.courseName})
+		var course = new courseResource();
+		course.name = $scope.courseName;
+		course.$save(function(result) {
+			$scope.courses.push(result);
+		});
 		$scope.courseName = ''
 	}
 }])
