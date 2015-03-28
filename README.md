@@ -1,4 +1,4 @@
-# Mean Demo
+# MEAN Demo
 
 This application helps us in understanding how the MEAN stack works, and how the communication takes place between Mongo, Express, Angular and Node.
 
@@ -27,7 +27,7 @@ $ npm install
 
 ### Todo's
 
- - Write unit tests
+ - Write UnitTest's
 
 
 [node.js]:http://nodejs.org
